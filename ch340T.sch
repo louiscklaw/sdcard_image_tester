@@ -1,6 +1,5 @@
 EESchema Schematic File Version 4
 LIBS:sdcard_image_tester-cache
-LIBS:STM32F042F6P6-tryout-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
