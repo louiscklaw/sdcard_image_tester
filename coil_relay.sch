@@ -1,8 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:sdcard_image_tester-cache
-LIBS:coil_relay-cache
-LIBS:sdcard_switch-cache
-LIBS:sdcard_reader-cache
+LIBS:STM32F042F6P6-tryout-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -18,15 +16,15 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Device:R R?
+L Device:R R2
 U 1 1 5BBB2962
 P 3900 1350
-AR Path="/5C16890A/5BBB2962" Ref="R?"  Part="1" 
+AR Path="/5C16890A/5BBB2962" Ref="R2"  Part="1" 
 AR Path="/5C19BBA4/5C1A0463/5BBB2962" Ref="R?"  Part="1" 
 AR Path="/5C19BBA4/5C1A050E/5BBB2962" Ref="R?"  Part="1" 
 AR Path="/5C1AE737/5BBB2962" Ref="R?"  Part="1" 
 AR Path="/5C2C736E/5BBB2962" Ref="R?"  Part="1" 
-F 0 "R?" H 3970 1396 50  0000 L CNN
+F 0 "R2" H 3970 1396 50  0000 L CNN
 F 1 "102" H 3970 1305 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3830 1350 50  0001 C CNN
 F 3 "~" H 3900 1350 50  0001 C CNN
@@ -34,15 +32,15 @@ F 3 "~" H 3900 1350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:LED D?
+L Device:LED D1
 U 1 1 5BBB29F7
 P 3900 1800
-AR Path="/5C16890A/5BBB29F7" Ref="D?"  Part="1" 
+AR Path="/5C16890A/5BBB29F7" Ref="D1"  Part="1" 
 AR Path="/5C19BBA4/5C1A0463/5BBB29F7" Ref="D?"  Part="1" 
 AR Path="/5C19BBA4/5C1A050E/5BBB29F7" Ref="D?"  Part="1" 
 AR Path="/5C1AE737/5BBB29F7" Ref="D?"  Part="1" 
 AR Path="/5C2C736E/5BBB29F7" Ref="D?"  Part="1" 
-F 0 "D?" V 3938 1683 50  0000 R CNN
+F 0 "D1" V 3938 1683 50  0000 R CNN
 F 1 "RELAY_STATUS" V 3847 1683 50  0000 R CNN
 F 2 "LED_SMD:LED_0805_2012Metric_Castellated" H 3900 1800 50  0001 C CNN
 F 3 "~" H 3900 1800 50  0001 C CNN
@@ -50,15 +48,15 @@ F 3 "~" H 3900 1800 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R R?
+L Device:R R1
 U 1 1 5BBB455B
 P 3850 3000
-AR Path="/5C16890A/5BBB455B" Ref="R?"  Part="1" 
+AR Path="/5C16890A/5BBB455B" Ref="R1"  Part="1" 
 AR Path="/5C19BBA4/5C1A0463/5BBB455B" Ref="R?"  Part="1" 
 AR Path="/5C19BBA4/5C1A050E/5BBB455B" Ref="R?"  Part="1" 
 AR Path="/5C1AE737/5BBB455B" Ref="R?"  Part="1" 
 AR Path="/5C2C736E/5BBB455B" Ref="R?"  Part="1" 
-F 0 "R?" V 3643 3000 50  0000 C CNN
+F 0 "R1" V 3643 3000 50  0000 C CNN
 F 1 "102" V 3734 3000 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3780 3000 50  0001 C CNN
 F 3 "~" H 3850 3000 50  0001 C CNN
@@ -66,15 +64,15 @@ F 3 "~" H 3850 3000 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R?
+L Device:R R3
 U 1 1 5BBB45E0
 P 4150 3300
-AR Path="/5C16890A/5BBB45E0" Ref="R?"  Part="1" 
+AR Path="/5C16890A/5BBB45E0" Ref="R3"  Part="1" 
 AR Path="/5C19BBA4/5C1A0463/5BBB45E0" Ref="R?"  Part="1" 
 AR Path="/5C19BBA4/5C1A050E/5BBB45E0" Ref="R?"  Part="1" 
 AR Path="/5C1AE737/5BBB45E0" Ref="R?"  Part="1" 
 AR Path="/5C2C736E/5BBB45E0" Ref="R?"  Part="1" 
-F 0 "R?" H 4080 3254 50  0000 R CNN
+F 0 "R3" H 4080 3254 50  0000 R CNN
 F 1 "103" H 4080 3345 50  0000 R CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4080 3300 50  0001 C CNN
 F 3 "~" H 4150 3300 50  0001 C CNN
@@ -82,15 +80,15 @@ F 3 "~" H 4150 3300 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0101
 U 1 1 5BBB468C
 P 4650 3600
-AR Path="/5C16890A/5BBB468C" Ref="#PWR?"  Part="1" 
+AR Path="/5C16890A/5BBB468C" Ref="#PWR0101"  Part="1" 
 AR Path="/5C19BBA4/5C1A0463/5BBB468C" Ref="#PWR?"  Part="1" 
 AR Path="/5C19BBA4/5C1A050E/5BBB468C" Ref="#PWR?"  Part="1" 
 AR Path="/5C1AE737/5BBB468C" Ref="#PWR?"  Part="1" 
 AR Path="/5C2C736E/5BBB468C" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 4650 3350 50  0001 C CNN
+F 0 "#PWR0101" H 4650 3350 50  0001 C CNN
 F 1 "GND" H 4655 3427 50  0000 C CNN
 F 2 "" H 4650 3600 50  0001 C CNN
 F 3 "" H 4650 3600 50  0001 C CNN
@@ -169,15 +167,15 @@ Wire Wire Line
 Wire Wire Line
 	2900 3000 3700 3000
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0102
 U 1 1 5BBB8756
 P 4800 5800
-AR Path="/5C16890A/5BBB8756" Ref="#PWR?"  Part="1" 
+AR Path="/5C16890A/5BBB8756" Ref="#PWR0102"  Part="1" 
 AR Path="/5C19BBA4/5C1A0463/5BBB8756" Ref="#PWR?"  Part="1" 
 AR Path="/5C19BBA4/5C1A050E/5BBB8756" Ref="#PWR?"  Part="1" 
 AR Path="/5C1AE737/5BBB8756" Ref="#PWR?"  Part="1" 
 AR Path="/5C2C736E/5BBB8756" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 4800 5550 50  0001 C CNN
+F 0 "#PWR0102" H 4800 5550 50  0001 C CNN
 F 1 "GND" H 4805 5627 50  0000 C CNN
 F 2 "" H 4800 5800 50  0001 C CNN
 F 3 "" H 4800 5800 50  0001 C CNN
@@ -185,15 +183,15 @@ F 3 "" H 4800 5800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R?
+L Device:R R4
 U 1 1 5BBB8777
 P 4800 5050
-AR Path="/5C16890A/5BBB8777" Ref="R?"  Part="1" 
+AR Path="/5C16890A/5BBB8777" Ref="R4"  Part="1" 
 AR Path="/5C19BBA4/5C1A0463/5BBB8777" Ref="R?"  Part="1" 
 AR Path="/5C19BBA4/5C1A050E/5BBB8777" Ref="R?"  Part="1" 
 AR Path="/5C1AE737/5BBB8777" Ref="R?"  Part="1" 
 AR Path="/5C2C736E/5BBB8777" Ref="R?"  Part="1" 
-F 0 "R?" H 4730 5004 50  0000 R CNN
+F 0 "R4" H 4730 5004 50  0000 R CNN
 F 1 "511" H 4730 5095 50  0000 R CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4730 5050 50  0001 C CNN
 F 3 "~" H 4800 5050 50  0001 C CNN
@@ -201,15 +199,15 @@ F 3 "~" H 4800 5050 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:LED D?
+L Device:LED D3
 U 1 1 5BBB87D3
 P 4800 5500
-AR Path="/5C16890A/5BBB87D3" Ref="D?"  Part="1" 
+AR Path="/5C16890A/5BBB87D3" Ref="D3"  Part="1" 
 AR Path="/5C19BBA4/5C1A0463/5BBB87D3" Ref="D?"  Part="1" 
 AR Path="/5C19BBA4/5C1A050E/5BBB87D3" Ref="D?"  Part="1" 
 AR Path="/5C1AE737/5BBB87D3" Ref="D?"  Part="1" 
 AR Path="/5C2C736E/5BBB87D3" Ref="D?"  Part="1" 
-F 0 "D?" V 4838 5382 50  0000 R CNN
+F 0 "D3" V 4838 5382 50  0000 R CNN
 F 1 "3V3_STATUS" V 4747 5382 50  0000 R CNN
 F 2 "LED_SMD:LED_0805_2012Metric_Castellated" H 4800 5500 50  0001 C CNN
 F 3 "~" H 4800 5500 50  0001 C CNN
@@ -245,15 +243,15 @@ Wire Wire Line
 Wire Wire Line
 	7850 2000 7450 2000
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0103
 U 1 1 5BBC4F5E
 P 5500 5850
-AR Path="/5C16890A/5BBC4F5E" Ref="#PWR?"  Part="1" 
+AR Path="/5C16890A/5BBC4F5E" Ref="#PWR0103"  Part="1" 
 AR Path="/5C19BBA4/5C1A0463/5BBC4F5E" Ref="#PWR?"  Part="1" 
 AR Path="/5C19BBA4/5C1A050E/5BBC4F5E" Ref="#PWR?"  Part="1" 
 AR Path="/5C1AE737/5BBC4F5E" Ref="#PWR?"  Part="1" 
 AR Path="/5C2C736E/5BBC4F5E" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 5500 5600 50  0001 C CNN
+F 0 "#PWR0103" H 5500 5600 50  0001 C CNN
 F 1 "GND" H 5505 5677 50  0000 C CNN
 F 2 "" H 5500 5850 50  0001 C CNN
 F 3 "" H 5500 5850 50  0001 C CNN
@@ -269,15 +267,15 @@ R1_COIL_P
 Text Label 4750 2600 0    50   ~ 0
 R1_COIL_N
 $Comp
-L taobao-components:A5W-K K?
+L taobao-components:A5W-K K1
 U 1 1 5C17187C
 P 5450 2250
-AR Path="/5C16890A/5C17187C" Ref="K?"  Part="1" 
+AR Path="/5C16890A/5C17187C" Ref="K1"  Part="1" 
 AR Path="/5C19BBA4/5C1A0463/5C17187C" Ref="K?"  Part="1" 
 AR Path="/5C19BBA4/5C1A050E/5C17187C" Ref="K?"  Part="1" 
 AR Path="/5C1AE737/5C17187C" Ref="K?"  Part="1" 
 AR Path="/5C2C736E/5C17187C" Ref="K?"  Part="1" 
-F 0 "K?" H 6100 2300 50  0000 L CNN
+F 0 "K1" H 6100 2300 50  0000 L CNN
 F 1 "A5W-K" H 6100 2250 50  0000 L CNN
 F 2 "Package_DIP:DIP-10_W7.62mm_LongPads" H 5450 1650 50  0001 C CNN
 F 3 "http://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=108-98001&DocType=SS&DocLang=EN" H 5250 2250 50  0001 C CNN
@@ -285,15 +283,15 @@ F 3 "http://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&D
 	1    0    0    -1  
 $EndComp
 $Comp
-L taobao-cp:CP4.7uf,50V C?
+L taobao-cp:CP4.7uf,50V C1
 U 1 1 5C175CD2
 P 5500 5250
-AR Path="/5C16890A/5C175CD2" Ref="C?"  Part="1" 
+AR Path="/5C16890A/5C175CD2" Ref="C1"  Part="1" 
 AR Path="/5C19BBA4/5C1A0463/5C175CD2" Ref="C?"  Part="1" 
 AR Path="/5C19BBA4/5C1A050E/5C175CD2" Ref="C?"  Part="1" 
 AR Path="/5C1AE737/5C175CD2" Ref="C?"  Part="1" 
 AR Path="/5C2C736E/5C175CD2" Ref="C?"  Part="1" 
-F 0 "C?" H 5600 5300 50  0000 L CNN
+F 0 "C1" H 5600 5300 50  0000 L CNN
 F 1 "CP4.7uf,50V" H 5600 5250 50  0000 L CNN
 F 2 "Capacitor_SMD:CP_Elec_4x5.3" H 5500 5250 50  0001 C CNN
 F 3 "~" H 5500 5250 50  0001 C CNN
@@ -303,15 +301,15 @@ $EndComp
 Wire Wire Line
 	5500 4700 5500 5150
 $Comp
-L taobao-d:1N4148 D?
+L taobao-d:1N4148 D2
 U 1 1 5C178516
 P 4500 2300
-AR Path="/5C16890A/5C178516" Ref="D?"  Part="1" 
+AR Path="/5C16890A/5C178516" Ref="D2"  Part="1" 
 AR Path="/5C19BBA4/5C1A0463/5C178516" Ref="D?"  Part="1" 
 AR Path="/5C19BBA4/5C1A050E/5C178516" Ref="D?"  Part="1" 
 AR Path="/5C1AE737/5C178516" Ref="D?"  Part="1" 
 AR Path="/5C2C736E/5C178516" Ref="D?"  Part="1" 
-F 0 "D?" V 4450 2400 50  0000 L CNN
+F 0 "D2" V 4450 2400 50  0000 L CNN
 F 1 "1N4148" V 4500 2400 50  0000 L CNN
 F 2 "Diode_SMD:D_SOD-323_HandSoldering" V 4500 2300 50  0001 C CNN
 F 3 "~" V 4500 2300 50  0001 C CNN
@@ -323,15 +321,15 @@ Wire Wire Line
 Wire Wire Line
 	3900 1950 3900 2700
 $Comp
-L Device:R R?
+L Device:R R6
 U 1 1 5C17F29D
 P 9200 1400
-AR Path="/5C16890A/5C17F29D" Ref="R?"  Part="1" 
+AR Path="/5C16890A/5C17F29D" Ref="R6"  Part="1" 
 AR Path="/5C19BBA4/5C1A0463/5C17F29D" Ref="R?"  Part="1" 
 AR Path="/5C19BBA4/5C1A050E/5C17F29D" Ref="R?"  Part="1" 
 AR Path="/5C1AE737/5C17F29D" Ref="R?"  Part="1" 
 AR Path="/5C2C736E/5C17F29D" Ref="R?"  Part="1" 
-F 0 "R?" H 9270 1446 50  0000 L CNN
+F 0 "R6" H 9270 1446 50  0000 L CNN
 F 1 "102" H 9270 1355 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 9130 1400 50  0001 C CNN
 F 3 "~" H 9200 1400 50  0001 C CNN
@@ -339,15 +337,15 @@ F 3 "~" H 9200 1400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:LED D?
+L Device:LED D4
 U 1 1 5C17F2A3
 P 9200 1850
-AR Path="/5C16890A/5C17F2A3" Ref="D?"  Part="1" 
+AR Path="/5C16890A/5C17F2A3" Ref="D4"  Part="1" 
 AR Path="/5C19BBA4/5C1A0463/5C17F2A3" Ref="D?"  Part="1" 
 AR Path="/5C19BBA4/5C1A050E/5C17F2A3" Ref="D?"  Part="1" 
 AR Path="/5C1AE737/5C17F2A3" Ref="D?"  Part="1" 
 AR Path="/5C2C736E/5C17F2A3" Ref="D?"  Part="1" 
-F 0 "D?" V 9238 1733 50  0000 R CNN
+F 0 "D4" V 9238 1733 50  0000 R CNN
 F 1 "RELAY_STATUS" V 9147 1733 50  0000 R CNN
 F 2 "LED_SMD:LED_0805_2012Metric_Castellated" H 9200 1850 50  0001 C CNN
 F 3 "~" H 9200 1850 50  0001 C CNN
@@ -355,15 +353,15 @@ F 3 "~" H 9200 1850 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R R?
+L Device:R R5
 U 1 1 5C17F2A9
 P 9150 3050
-AR Path="/5C16890A/5C17F2A9" Ref="R?"  Part="1" 
+AR Path="/5C16890A/5C17F2A9" Ref="R5"  Part="1" 
 AR Path="/5C19BBA4/5C1A0463/5C17F2A9" Ref="R?"  Part="1" 
 AR Path="/5C19BBA4/5C1A050E/5C17F2A9" Ref="R?"  Part="1" 
 AR Path="/5C1AE737/5C17F2A9" Ref="R?"  Part="1" 
 AR Path="/5C2C736E/5C17F2A9" Ref="R?"  Part="1" 
-F 0 "R?" V 8943 3050 50  0000 C CNN
+F 0 "R5" V 8943 3050 50  0000 C CNN
 F 1 "102" V 9034 3050 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 9080 3050 50  0001 C CNN
 F 3 "~" H 9150 3050 50  0001 C CNN
@@ -371,15 +369,15 @@ F 3 "~" H 9150 3050 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R?
+L Device:R R7
 U 1 1 5C17F2AF
 P 9450 3350
-AR Path="/5C16890A/5C17F2AF" Ref="R?"  Part="1" 
+AR Path="/5C16890A/5C17F2AF" Ref="R7"  Part="1" 
 AR Path="/5C19BBA4/5C1A0463/5C17F2AF" Ref="R?"  Part="1" 
 AR Path="/5C19BBA4/5C1A050E/5C17F2AF" Ref="R?"  Part="1" 
 AR Path="/5C1AE737/5C17F2AF" Ref="R?"  Part="1" 
 AR Path="/5C2C736E/5C17F2AF" Ref="R?"  Part="1" 
-F 0 "R?" H 9380 3304 50  0000 R CNN
+F 0 "R7" H 9380 3304 50  0000 R CNN
 F 1 "103" H 9380 3395 50  0000 R CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 9380 3350 50  0001 C CNN
 F 3 "~" H 9450 3350 50  0001 C CNN
@@ -387,15 +385,15 @@ F 3 "~" H 9450 3350 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0104
 U 1 1 5C17F2B5
 P 9950 3650
-AR Path="/5C16890A/5C17F2B5" Ref="#PWR?"  Part="1" 
+AR Path="/5C16890A/5C17F2B5" Ref="#PWR0104"  Part="1" 
 AR Path="/5C19BBA4/5C1A0463/5C17F2B5" Ref="#PWR?"  Part="1" 
 AR Path="/5C19BBA4/5C1A050E/5C17F2B5" Ref="#PWR?"  Part="1" 
 AR Path="/5C1AE737/5C17F2B5" Ref="#PWR?"  Part="1" 
 AR Path="/5C2C736E/5C17F2B5" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 9950 3400 50  0001 C CNN
+F 0 "#PWR0104" H 9950 3400 50  0001 C CNN
 F 1 "GND" H 9955 3477 50  0000 C CNN
 F 2 "" H 9950 3650 50  0001 C CNN
 F 3 "" H 9950 3650 50  0001 C CNN
@@ -504,15 +502,15 @@ R2_COIL_P
 Text Label 10050 2650 0    50   ~ 0
 R2_COIL_N
 $Comp
-L taobao-components:A5W-K K?
+L taobao-components:A5W-K K2
 U 1 1 5C17F316
 P 10750 2300
-AR Path="/5C16890A/5C17F316" Ref="K?"  Part="1" 
+AR Path="/5C16890A/5C17F316" Ref="K2"  Part="1" 
 AR Path="/5C19BBA4/5C1A0463/5C17F316" Ref="K?"  Part="1" 
 AR Path="/5C19BBA4/5C1A050E/5C17F316" Ref="K?"  Part="1" 
 AR Path="/5C1AE737/5C17F316" Ref="K?"  Part="1" 
 AR Path="/5C2C736E/5C17F316" Ref="K?"  Part="1" 
-F 0 "K?" H 11400 2350 50  0000 L CNN
+F 0 "K2" H 11400 2350 50  0000 L CNN
 F 1 "A5W-K" H 11400 2300 50  0000 L CNN
 F 2 "Package_DIP:DIP-10_W7.62mm_LongPads" H 10750 1700 50  0001 C CNN
 F 3 "http://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=108-98001&DocType=SS&DocLang=EN" H 10550 2300 50  0001 C CNN
@@ -520,15 +518,15 @@ F 3 "http://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&D
 	1    0    0    -1  
 $EndComp
 $Comp
-L taobao-d:1N4148 D?
+L taobao-d:1N4148 D5
 U 1 1 5C17F31C
 P 9800 2350
-AR Path="/5C16890A/5C17F31C" Ref="D?"  Part="1" 
+AR Path="/5C16890A/5C17F31C" Ref="D5"  Part="1" 
 AR Path="/5C19BBA4/5C1A0463/5C17F31C" Ref="D?"  Part="1" 
 AR Path="/5C19BBA4/5C1A050E/5C17F31C" Ref="D?"  Part="1" 
 AR Path="/5C1AE737/5C17F31C" Ref="D?"  Part="1" 
 AR Path="/5C2C736E/5C17F31C" Ref="D?"  Part="1" 
-F 0 "D?" V 9750 2450 50  0000 L CNN
+F 0 "D5" V 9750 2450 50  0000 L CNN
 F 1 "1N4148" V 9800 2450 50  0000 L CNN
 F 2 "Diode_SMD:D_SOD-323_HandSoldering" V 9800 2350 50  0001 C CNN
 F 3 "~" V 9800 2350 50  0001 C CNN
@@ -540,15 +538,15 @@ Wire Wire Line
 Wire Wire Line
 	9200 2000 9200 2750
 $Comp
-L taobao-transistor:2N3904(1AM) Q?
+L taobao-transistor:2N3904(1AM) Q1
 U 1 1 5C17A3E7
 P 4550 3000
-AR Path="/5C16890A/5C17A3E7" Ref="Q?"  Part="1" 
+AR Path="/5C16890A/5C17A3E7" Ref="Q1"  Part="1" 
 AR Path="/5C19BBA4/5C1A0463/5C17A3E7" Ref="Q?"  Part="1" 
 AR Path="/5C19BBA4/5C1A050E/5C17A3E7" Ref="Q?"  Part="1" 
 AR Path="/5C1AE737/5C17A3E7" Ref="Q?"  Part="1" 
 AR Path="/5C2C736E/5C17A3E7" Ref="Q?"  Part="1" 
-F 0 "Q?" H 4741 3046 50  0000 L CNN
+F 0 "Q1" H 4741 3046 50  0000 L CNN
 F 1 "2N3904(1AM)" H 4741 2955 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 4750 2925 50  0001 L CIN
 F 3 "" H 4550 3000 50  0001 L CNN
@@ -556,15 +554,15 @@ F 3 "" H 4550 3000 50  0001 L CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L taobao-transistor:2N3904(1AM) Q?
+L taobao-transistor:2N3904(1AM) Q2
 U 1 1 5C17A467
 P 9850 3050
-AR Path="/5C16890A/5C17A467" Ref="Q?"  Part="1" 
+AR Path="/5C16890A/5C17A467" Ref="Q2"  Part="1" 
 AR Path="/5C19BBA4/5C1A0463/5C17A467" Ref="Q?"  Part="1" 
 AR Path="/5C19BBA4/5C1A050E/5C17A467" Ref="Q?"  Part="1" 
 AR Path="/5C1AE737/5C17A467" Ref="Q?"  Part="1" 
 AR Path="/5C2C736E/5C17A467" Ref="Q?"  Part="1" 
-F 0 "Q?" H 10041 3096 50  0000 L CNN
+F 0 "Q2" H 10041 3096 50  0000 L CNN
 F 1 "2N3904(1AM)" H 10041 3005 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 10050 2975 50  0001 L CIN
 F 3 "" H 9850 3050 50  0001 L CNN
@@ -572,15 +570,15 @@ F 3 "" H 9850 3050 50  0001 L CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L taobao-components:V_RELAY #PWR?
+L taobao-components:V_RELAY #PWR0105
 U 1 1 5C1AE614
 P 4800 4700
-AR Path="/5C16890A/5C1AE614" Ref="#PWR?"  Part="1" 
+AR Path="/5C16890A/5C1AE614" Ref="#PWR0105"  Part="1" 
 AR Path="/5C19BBA4/5C1A0463/5C1AE614" Ref="#PWR?"  Part="1" 
 AR Path="/5C19BBA4/5C1A050E/5C1AE614" Ref="#PWR?"  Part="1" 
 AR Path="/5C1AE737/5C1AE614" Ref="#PWR?"  Part="1" 
 AR Path="/5C2C736E/5C1AE614" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 4800 4550 50  0001 C CNN
+F 0 "#PWR0105" H 4800 4550 50  0001 C CNN
 F 1 "V_RELAY" H 4817 4873 50  0000 C CNN
 F 2 "" H 4800 4700 50  0001 C CNN
 F 3 "" H 4800 4700 50  0001 C CNN
@@ -590,15 +588,15 @@ $EndComp
 Wire Wire Line
 	4800 4700 4800 4900
 $Comp
-L taobao-components:V_RELAY #PWR?
+L taobao-components:V_RELAY #PWR0106
 U 1 1 5C1B2D37
 P 5500 4700
-AR Path="/5C16890A/5C1B2D37" Ref="#PWR?"  Part="1" 
+AR Path="/5C16890A/5C1B2D37" Ref="#PWR0106"  Part="1" 
 AR Path="/5C19BBA4/5C1A0463/5C1B2D37" Ref="#PWR?"  Part="1" 
 AR Path="/5C19BBA4/5C1A050E/5C1B2D37" Ref="#PWR?"  Part="1" 
 AR Path="/5C1AE737/5C1B2D37" Ref="#PWR?"  Part="1" 
 AR Path="/5C2C736E/5C1B2D37" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 5500 4550 50  0001 C CNN
+F 0 "#PWR0106" H 5500 4550 50  0001 C CNN
 F 1 "V_RELAY" H 5517 4873 50  0000 C CNN
 F 2 "" H 5500 4700 50  0001 C CNN
 F 3 "" H 5500 4700 50  0001 C CNN
@@ -618,15 +616,15 @@ R2_CONTROL
 Wire Wire Line
 	1800 1450 1150 1450
 $Comp
-L taobao-components:V_RELAY #PWR?
+L taobao-components:V_RELAY #PWR0107
 U 1 1 5C1C63E3
 P 3900 1000
-AR Path="/5C16890A/5C1C63E3" Ref="#PWR?"  Part="1" 
+AR Path="/5C16890A/5C1C63E3" Ref="#PWR0107"  Part="1" 
 AR Path="/5C19BBA4/5C1A0463/5C1C63E3" Ref="#PWR?"  Part="1" 
 AR Path="/5C19BBA4/5C1A050E/5C1C63E3" Ref="#PWR?"  Part="1" 
 AR Path="/5C1AE737/5C1C63E3" Ref="#PWR?"  Part="1" 
 AR Path="/5C2C736E/5C1C63E3" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 3900 850 50  0001 C CNN
+F 0 "#PWR0107" H 3900 850 50  0001 C CNN
 F 1 "V_RELAY" H 3917 1173 50  0000 C CNN
 F 2 "" H 3900 1000 50  0001 C CNN
 F 3 "" H 3900 1000 50  0001 C CNN
@@ -634,15 +632,15 @@ F 3 "" H 3900 1000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L taobao-components:V_RELAY #PWR?
+L taobao-components:V_RELAY #PWR0108
 U 1 1 5C1C807D
 P 4650 1000
-AR Path="/5C16890A/5C1C807D" Ref="#PWR?"  Part="1" 
+AR Path="/5C16890A/5C1C807D" Ref="#PWR0108"  Part="1" 
 AR Path="/5C19BBA4/5C1A0463/5C1C807D" Ref="#PWR?"  Part="1" 
 AR Path="/5C19BBA4/5C1A050E/5C1C807D" Ref="#PWR?"  Part="1" 
 AR Path="/5C1AE737/5C1C807D" Ref="#PWR?"  Part="1" 
 AR Path="/5C2C736E/5C1C807D" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 4650 850 50  0001 C CNN
+F 0 "#PWR0108" H 4650 850 50  0001 C CNN
 F 1 "V_RELAY" H 4667 1173 50  0000 C CNN
 F 2 "" H 4650 1000 50  0001 C CNN
 F 3 "" H 4650 1000 50  0001 C CNN
@@ -650,15 +648,15 @@ F 3 "" H 4650 1000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L taobao-components:V_RELAY #PWR?
+L taobao-components:V_RELAY #PWR0109
 U 1 1 5C1C9D8A
 P 9200 1050
-AR Path="/5C16890A/5C1C9D8A" Ref="#PWR?"  Part="1" 
+AR Path="/5C16890A/5C1C9D8A" Ref="#PWR0109"  Part="1" 
 AR Path="/5C19BBA4/5C1A0463/5C1C9D8A" Ref="#PWR?"  Part="1" 
 AR Path="/5C19BBA4/5C1A050E/5C1C9D8A" Ref="#PWR?"  Part="1" 
 AR Path="/5C1AE737/5C1C9D8A" Ref="#PWR?"  Part="1" 
 AR Path="/5C2C736E/5C1C9D8A" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 9200 900 50  0001 C CNN
+F 0 "#PWR0109" H 9200 900 50  0001 C CNN
 F 1 "V_RELAY" H 9217 1223 50  0000 C CNN
 F 2 "" H 9200 1050 50  0001 C CNN
 F 3 "" H 9200 1050 50  0001 C CNN
@@ -666,15 +664,15 @@ F 3 "" H 9200 1050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L taobao-components:V_RELAY #PWR?
+L taobao-components:V_RELAY #PWR0110
 U 1 1 5C1C9E67
 P 9950 1050
-AR Path="/5C16890A/5C1C9E67" Ref="#PWR?"  Part="1" 
+AR Path="/5C16890A/5C1C9E67" Ref="#PWR0110"  Part="1" 
 AR Path="/5C19BBA4/5C1A0463/5C1C9E67" Ref="#PWR?"  Part="1" 
 AR Path="/5C19BBA4/5C1A050E/5C1C9E67" Ref="#PWR?"  Part="1" 
 AR Path="/5C1AE737/5C1C9E67" Ref="#PWR?"  Part="1" 
 AR Path="/5C2C736E/5C1C9E67" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 9950 900 50  0001 C CNN
+F 0 "#PWR0110" H 9950 900 50  0001 C CNN
 F 1 "V_RELAY" H 9967 1223 50  0000 C CNN
 F 2 "" H 9950 1050 50  0001 C CNN
 F 3 "" H 9950 1050 50  0001 C CNN
@@ -682,15 +680,15 @@ F 3 "" H 9950 1050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x02 J?
+L Connector_Generic:Conn_01x02 J1
 U 1 1 5C1CE215
 P 2000 1350
-AR Path="/5C16890A/5C1CE215" Ref="J?"  Part="1" 
+AR Path="/5C16890A/5C1CE215" Ref="J1"  Part="1" 
 AR Path="/5C19BBA4/5C1A0463/5C1CE215" Ref="J?"  Part="1" 
 AR Path="/5C19BBA4/5C1A050E/5C1CE215" Ref="J?"  Part="1" 
 AR Path="/5C1AE737/5C1CE215" Ref="J?"  Part="1" 
 AR Path="/5C2C736E/5C1CE215" Ref="J?"  Part="1" 
-F 0 "J?" H 2080 1342 50  0000 L CNN
+F 0 "J1" H 2080 1342 50  0000 L CNN
 F 1 "Conn_01x02" H 2080 1251 50  0000 L CNN
 F 2 "Connector_PinHeader_1.27mm:PinHeader_1x02_P1.27mm_Vertical" H 2000 1350 50  0001 C CNN
 F 3 "~" H 2000 1350 50  0001 C CNN
@@ -698,15 +696,15 @@ F 3 "~" H 2000 1350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_02x03_Odd_Even J?
+L Connector_Generic:Conn_02x03_Odd_Even J2
 U 1 1 5C1F21BB
 P 7150 1900
-AR Path="/5C16890A/5C1F21BB" Ref="J?"  Part="1" 
+AR Path="/5C16890A/5C1F21BB" Ref="J2"  Part="1" 
 AR Path="/5C19BBA4/5C1A0463/5C1F21BB" Ref="J?"  Part="1" 
 AR Path="/5C19BBA4/5C1A050E/5C1F21BB" Ref="J?"  Part="1" 
 AR Path="/5C1AE737/5C1F21BB" Ref="J?"  Part="1" 
 AR Path="/5C2C736E/5C1F21BB" Ref="J?"  Part="1" 
-F 0 "J?" H 7200 2217 50  0000 C CNN
+F 0 "J2" H 7200 2217 50  0000 C CNN
 F 1 "Conn_02x03_Odd_Even" H 7200 2126 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical_SMD" H 7150 1900 50  0001 C CNN
 F 3 "~" H 7150 1900 50  0001 C CNN
@@ -714,15 +712,15 @@ F 3 "~" H 7150 1900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_02x03_Odd_Even J?
+L Connector_Generic:Conn_02x03_Odd_Even J3
 U 1 1 5C1F70CC
 P 12350 2150
-AR Path="/5C16890A/5C1F70CC" Ref="J?"  Part="1" 
+AR Path="/5C16890A/5C1F70CC" Ref="J3"  Part="1" 
 AR Path="/5C19BBA4/5C1A0463/5C1F70CC" Ref="J?"  Part="1" 
 AR Path="/5C19BBA4/5C1A050E/5C1F70CC" Ref="J?"  Part="1" 
 AR Path="/5C1AE737/5C1F70CC" Ref="J?"  Part="1" 
 AR Path="/5C2C736E/5C1F70CC" Ref="J?"  Part="1" 
-F 0 "J?" H 12400 2467 50  0000 C CNN
+F 0 "J3" H 12400 2467 50  0000 C CNN
 F 1 "Conn_02x03_Odd_Even" H 12400 2376 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical_SMD" H 12350 2150 50  0001 C CNN
 F 3 "~" H 12350 2150 50  0001 C CNN

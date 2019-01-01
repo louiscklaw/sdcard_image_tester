@@ -407,7 +407,7 @@ F 3 "~" H 14500 6850 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L taobao-osc:O8M Y?
+L taobao-osc:O_8M Y?
 U 1 1 5BCC6C8D
 P 14700 6700
 F 0 "Y?" V 14654 6788 50  0000 L CNN
@@ -1292,7 +1292,7 @@ Wire Wire Line
 Wire Wire Line
 	2350 5650 1800 5650
 $Comp
-L taobao-osc:O_EPSON_32.768K Y?
+L taobao-osc:O_32.768K Y?
 U 1 1 5BD58864
 P 14700 7500
 F 0 "Y?" V 14746 7588 50  0000 L CNN

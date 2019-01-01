@@ -1,8 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:sdcard_image_tester-cache
-LIBS:coil_relay-cache
-LIBS:sdcard_switch-cache
-LIBS:sdcard_reader-cache
+LIBS:STM32F042F6P6-tryout-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -65,10 +63,10 @@ F2 "CH340_RXD" I R 2900 2650 50
 F3 "CH340_TXD" O R 2900 2750 50 
 $EndSheet
 $Comp
-L Jumper:SolderJumper_3_Bridged12 JP?
+L Jumper:SolderJumper_3_Bridged12 JP1
 U 1 1 5C1D2B8C
 P 3300 2650
-F 0 "JP?" V 3250 2800 50  0000 L CNN
+F 0 "JP1" V 3250 2800 50  0000 L CNN
 F 1 "SolderJumper_3_Bridged12" V 3300 2800 50  0000 L CNN
 F 2 "Jumper:SolderJumper-3_P2.0mm_Open_TrianglePad1.0x1.5mm_NumberLabels" H 3300 2650 50  0001 C CNN
 F 3 "~" H 3300 2650 50  0001 C CNN
@@ -76,10 +74,10 @@ F 3 "~" H 3300 2650 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Jumper:SolderJumper_3_Bridged12 JP?
+L Jumper:SolderJumper_3_Bridged12 JP2
 U 1 1 5C1D2CD9
 P 3550 2750
-F 0 "JP?" V 3500 2900 50  0000 L CNN
+F 0 "JP2" V 3500 2900 50  0000 L CNN
 F 1 "SolderJumper_3_Bridged12" V 3550 2900 50  0000 L CNN
 F 2 "Jumper:SolderJumper-3_P2.0mm_Open_TrianglePad1.0x1.5mm_NumberLabels" H 3550 2750 50  0001 C CNN
 F 3 "~" H 3550 2750 50  0001 C CNN
@@ -136,7 +134,51 @@ Wire Wire Line
 $Sheet
 S 5150 2500 850  550 
 U 5C2C736E
-F0 "stm32_core" 50
-F1 "stm32_core.sch" 50
+F0 "STM32F042F6P6" 50
+F1 "STM32F042F6P6.sch" 50
 $EndSheet
+$Comp
+L taobao-mounting-hole:MOUNT_M2.5 H1
+U 1 1 5C2C7F9F
+P 5800 6700
+F 0 "H1" H 5900 6746 50  0000 L CNN
+F 1 "MOUNT_M2.5" H 5900 6655 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5_DIN965" H 5800 6700 50  0001 C CNN
+F 3 "~" H 5800 6700 50  0001 C CNN
+	1    5800 6700
+	1    0    0    -1  
+$EndComp
+$Comp
+L taobao-mounting-hole:MOUNT_M2.5 H2
+U 1 1 5C2C7FF1
+P 5800 6950
+F 0 "H2" H 5900 6996 50  0000 L CNN
+F 1 "MOUNT_M2.5" H 5900 6905 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5_DIN965" H 5800 6950 50  0001 C CNN
+F 3 "~" H 5800 6950 50  0001 C CNN
+	1    5800 6950
+	1    0    0    -1  
+$EndComp
+$Comp
+L taobao-mounting-hole:MOUNT_M2.5 H3
+U 1 1 5C2C809F
+P 5800 7200
+F 0 "H3" H 5900 7246 50  0000 L CNN
+F 1 "MOUNT_M2.5" H 5900 7155 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5_DIN965" H 5800 7200 50  0001 C CNN
+F 3 "~" H 5800 7200 50  0001 C CNN
+	1    5800 7200
+	1    0    0    -1  
+$EndComp
+$Comp
+L taobao-mounting-hole:MOUNT_M2.5 H4
+U 1 1 5C2C80A5
+P 5800 7450
+F 0 "H4" H 5900 7496 50  0000 L CNN
+F 1 "MOUNT_M2.5" H 5900 7405 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5_DIN965" H 5800 7450 50  0001 C CNN
+F 3 "~" H 5800 7450 50  0001 C CNN
+	1    5800 7450
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

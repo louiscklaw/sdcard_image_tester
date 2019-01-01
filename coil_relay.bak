@@ -1,8 +1,5 @@
 EESchema Schematic File Version 4
 LIBS:sdcard_image_tester-cache
-LIBS:coil_relay-cache
-LIBS:sdcard_switch-cache
-LIBS:sdcard_reader-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
