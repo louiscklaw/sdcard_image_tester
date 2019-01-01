@@ -1,0 +1,463 @@
+EESchema Schematic File Version 4
+LIBS:sdcard_image_tester-cache
+LIBS:coil_relay-cache
+LIBS:sdcard_switch-cache
+LIBS:sdcard_reader-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 5 6
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L taobao-components:CH340T(SSOP20W) U?
+U 1 1 5C1620C7
+P 5700 2550
+AR Path="/5C183BF5/5C1620C7" Ref="U?"  Part="1" 
+AR Path="/5C19BBA6/5C1620C7" Ref="U?"  Part="1" 
+AR Path="/5C19BBA4/5C1A0478/5C1620C7" Ref="U?"  Part="1" 
+AR Path="/5C19BBA4/5C1A04F9/5C1620C7" Ref="U?"  Part="1" 
+AR Path="/5BF34C63/5C2B8903/5C1620C7" Ref="U?"  Part="1" 
+F 0 "U?" H 5700 3500 60  0000 C CNN
+F 1 "CH340T(SSOP20W)" H 5700 3350 60  0000 C CNN
+F 2 "Package_SO:SSOP-20_5.3x7.2mm_P0.65mm" H 5700 3250 60  0000 C CNN
+F 3 "" H 5700 2550 60  0000 C CNN
+	1    5700 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:USB_B_Mini J?
+U 1 1 5C164EDE
+P 1950 2550
+AR Path="/5C183BF5/5C164EDE" Ref="J?"  Part="1" 
+AR Path="/5C19BBA6/5C164EDE" Ref="J?"  Part="1" 
+AR Path="/5C19BBA4/5C1A0478/5C164EDE" Ref="J?"  Part="1" 
+AR Path="/5C19BBA4/5C1A04F9/5C164EDE" Ref="J?"  Part="1" 
+AR Path="/5BF34C63/5C2B8903/5C164EDE" Ref="J?"  Part="1" 
+F 0 "J?" H 2050 3050 50  0000 C CNN
+F 1 "USB_B_Mini" H 2050 2950 50  0000 C CNN
+F 2 "Connector_USB:USB_Micro-B_Molex-105017-0001" H 2100 2500 50  0001 C CNN
+F 3 "~" H 2100 2500 50  0001 C CNN
+	1    1950 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5C164FA5
+P 1900 3200
+AR Path="/5C183BF5/5C164FA5" Ref="#PWR?"  Part="1" 
+AR Path="/5C19BBA6/5C164FA5" Ref="#PWR?"  Part="1" 
+AR Path="/5C19BBA4/5C1A0478/5C164FA5" Ref="#PWR?"  Part="1" 
+AR Path="/5C19BBA4/5C1A04F9/5C164FA5" Ref="#PWR?"  Part="1" 
+AR Path="/5BF34C63/5C2B8903/5C164FA5" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 1900 2950 50  0001 C CNN
+F 1 "GND" H 1950 3000 50  0000 C CNN
+F 2 "" H 1900 3200 50  0001 C CNN
+F 3 "" H 1900 3200 50  0001 C CNN
+	1    1900 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1900 3200 1900 3100
+Wire Wire Line
+	1900 3100 1850 3100
+Wire Wire Line
+	1850 3100 1850 2950
+Wire Wire Line
+	1950 2950 1950 3100
+Wire Wire Line
+	1950 3100 1900 3100
+Connection ~ 1900 3100
+Wire Wire Line
+	4050 2350 4050 2300
+Wire Wire Line
+	4050 1950 4050 2050
+Wire Wire Line
+	4950 2050 4050 2050
+Connection ~ 4050 2050
+Wire Wire Line
+	4050 2050 4050 2100
+Wire Wire Line
+	4950 2150 4550 2150
+Wire Wire Line
+	4050 2350 4550 2350
+$Comp
+L taobao-c:C102,0603 C?
+U 1 1 5C1660CD
+P 4550 2250
+AR Path="/5C183BF5/5C1660CD" Ref="C?"  Part="1" 
+AR Path="/5C19BBA6/5C1660CD" Ref="C?"  Part="1" 
+AR Path="/5C19BBA4/5C1A0478/5C1660CD" Ref="C?"  Part="1" 
+AR Path="/5C19BBA4/5C1A04F9/5C1660CD" Ref="C?"  Part="1" 
+AR Path="/5BF34C63/5C2B8903/5C1660CD" Ref="C?"  Part="1" 
+F 0 "C?" H 4650 2300 50  0000 L CNN
+F 1 "C102,0603" H 4650 2250 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4550 2250 50  0001 C CNN
+F 3 "~" H 4550 2250 50  0001 C CNN
+	1    4550 2250
+	1    0    0    -1  
+$EndComp
+Connection ~ 4550 2350
+Wire Wire Line
+	4550 2350 4950 2350
+Text Label 2700 2650 2    50   ~ 0
+USB_DM
+Text Label 2700 2550 2    50   ~ 0
+USB_DP
+Wire Wire Line
+	2250 2650 2700 2650
+Wire Wire Line
+	2250 2550 2700 2550
+Text Label 4500 2550 0    50   ~ 0
+USB_DM
+Text Label 4500 2650 0    50   ~ 0
+USB_DP
+Wire Wire Line
+	4950 2550 4500 2550
+Wire Wire Line
+	4950 2650 4500 2650
+$Comp
+L taobao-c:C22pf,0603 C?
+U 1 1 5C1676A0
+P 4150 2850
+AR Path="/5C183BF5/5C1676A0" Ref="C?"  Part="1" 
+AR Path="/5C19BBA6/5C1676A0" Ref="C?"  Part="1" 
+AR Path="/5C19BBA4/5C1A0478/5C1676A0" Ref="C?"  Part="1" 
+AR Path="/5C19BBA4/5C1A04F9/5C1676A0" Ref="C?"  Part="1" 
+AR Path="/5BF34C63/5C2B8903/5C1676A0" Ref="C?"  Part="1" 
+F 0 "C?" V 4400 2850 50  0000 C CNN
+F 1 "C22pf,0603" V 4300 2850 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4150 2850 50  0001 C CNN
+F 3 "~" H 4150 2850 50  0001 C CNN
+	1    4150 2850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L taobao-c:C22pf,0603 C?
+U 1 1 5C1676D8
+P 4150 3050
+AR Path="/5C183BF5/5C1676D8" Ref="C?"  Part="1" 
+AR Path="/5C19BBA6/5C1676D8" Ref="C?"  Part="1" 
+AR Path="/5C19BBA4/5C1A0478/5C1676D8" Ref="C?"  Part="1" 
+AR Path="/5C19BBA4/5C1A04F9/5C1676D8" Ref="C?"  Part="1" 
+AR Path="/5BF34C63/5C2B8903/5C1676D8" Ref="C?"  Part="1" 
+F 0 "C?" V 4300 3050 50  0000 C CNN
+F 1 "C22pf,0603" V 4400 3050 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4150 3050 50  0001 C CNN
+F 3 "~" H 4150 3050 50  0001 C CNN
+	1    4150 3050
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5C167D3B
+P 3850 3100
+AR Path="/5C183BF5/5C167D3B" Ref="#PWR?"  Part="1" 
+AR Path="/5C19BBA6/5C167D3B" Ref="#PWR?"  Part="1" 
+AR Path="/5C19BBA4/5C1A0478/5C167D3B" Ref="#PWR?"  Part="1" 
+AR Path="/5C19BBA4/5C1A04F9/5C167D3B" Ref="#PWR?"  Part="1" 
+AR Path="/5BF34C63/5C2B8903/5C167D3B" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 3850 2850 50  0001 C CNN
+F 1 "GND" H 3900 2900 50  0000 C CNN
+F 2 "" H 3850 3100 50  0001 C CNN
+F 3 "" H 3850 3100 50  0001 C CNN
+	1    3850 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3850 3100 3850 2950
+Wire Wire Line
+	3850 2950 3950 2950
+Wire Wire Line
+	3950 2950 3950 3050
+Wire Wire Line
+	3950 3050 4050 3050
+Wire Wire Line
+	4050 2850 4000 2850
+Wire Wire Line
+	3950 2850 3950 2950
+Connection ~ 3950 2950
+$Comp
+L power:GND #PWR?
+U 1 1 5C168D36
+P 3700 2450
+AR Path="/5C183BF5/5C168D36" Ref="#PWR?"  Part="1" 
+AR Path="/5C19BBA6/5C168D36" Ref="#PWR?"  Part="1" 
+AR Path="/5C19BBA4/5C1A0478/5C168D36" Ref="#PWR?"  Part="1" 
+AR Path="/5C19BBA4/5C1A04F9/5C168D36" Ref="#PWR?"  Part="1" 
+AR Path="/5BF34C63/5C2B8903/5C168D36" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 3700 2200 50  0001 C CNN
+F 1 "GND" V 3750 2300 50  0000 R CNN
+F 2 "" H 3700 2450 50  0001 C CNN
+F 3 "" H 3700 2450 50  0001 C CNN
+	1    3700 2450
+	-1   0    0    -1  
+$EndComp
+$Comp
+L taobao-c:C226,6.3v,0603 C?
+U 1 1 5C16A7DA
+P 3700 2200
+AR Path="/5C183BF5/5C16A7DA" Ref="C?"  Part="1" 
+AR Path="/5C19BBA6/5C16A7DA" Ref="C?"  Part="1" 
+AR Path="/5C19BBA4/5C1A0478/5C16A7DA" Ref="C?"  Part="1" 
+AR Path="/5C19BBA4/5C1A04F9/5C16A7DA" Ref="C?"  Part="1" 
+AR Path="/5BF34C63/5C2B8903/5C16A7DA" Ref="C?"  Part="1" 
+F 0 "C?" V 3450 2200 50  0000 C CNN
+F 1 "C226,6.3v,0603" V 3550 2200 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3700 2200 50  0001 C CNN
+F 3 "~" H 3700 2200 50  0001 C CNN
+	1    3700 2200
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	3700 1950 3700 2100
+Wire Wire Line
+	3700 2300 3700 2450
+$Comp
+L power:GND #PWR?
+U 1 1 5C16BB38
+P 7200 1850
+AR Path="/5C183BF5/5C16BB38" Ref="#PWR?"  Part="1" 
+AR Path="/5C19BBA6/5C16BB38" Ref="#PWR?"  Part="1" 
+AR Path="/5C19BBA4/5C1A0478/5C16BB38" Ref="#PWR?"  Part="1" 
+AR Path="/5C19BBA4/5C1A04F9/5C16BB38" Ref="#PWR?"  Part="1" 
+AR Path="/5BF34C63/5C2B8903/5C16BB38" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 7200 1600 50  0001 C CNN
+F 1 "GND" H 7200 1650 50  0000 C CNN
+F 2 "" H 7200 1850 50  0001 C CNN
+F 3 "" H 7200 1850 50  0001 C CNN
+	1    7200 1850
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7200 1850 7200 1950
+Wire Wire Line
+	7200 1950 7350 1950
+$Comp
+L Connector_Generic:Conn_01x09 J?
+U 1 1 5C16CEF0
+P 7550 2350
+AR Path="/5C183BF5/5C16CEF0" Ref="J?"  Part="1" 
+AR Path="/5C19BBA6/5C16CEF0" Ref="J?"  Part="1" 
+AR Path="/5C19BBA4/5C1A0478/5C16CEF0" Ref="J?"  Part="1" 
+AR Path="/5C19BBA4/5C1A04F9/5C16CEF0" Ref="J?"  Part="1" 
+AR Path="/5BF34C63/5C2B8903/5C16CEF0" Ref="J?"  Part="1" 
+F 0 "J?" H 7650 2400 50  0000 L CNN
+F 1 "Conn_01x09" H 7650 2300 50  0000 L CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_1x09_P1.27mm_Vertical" H 7550 2350 50  0001 C CNN
+F 3 "~" H 7550 2350 50  0001 C CNN
+	1    7550 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L taobao-c:C104,0603 C?
+U 1 1 5C16E8B4
+P 4050 2200
+AR Path="/5C183BF5/5C16E8B4" Ref="C?"  Part="1" 
+AR Path="/5C19BBA6/5C16E8B4" Ref="C?"  Part="1" 
+AR Path="/5C19BBA4/5C1A0478/5C16E8B4" Ref="C?"  Part="1" 
+AR Path="/5C19BBA4/5C1A04F9/5C16E8B4" Ref="C?"  Part="1" 
+AR Path="/5BF34C63/5C2B8903/5C16E8B4" Ref="C?"  Part="1" 
+F 0 "C?" H 4150 2250 50  0000 L CNN
+F 1 "C104,0603" H 4150 2200 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4050 2200 50  0001 C CNN
+F 3 "~" H 4050 2200 50  0001 C CNN
+	1    4050 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6550 2650 7000 2650
+Wire Wire Line
+	7000 2650 7000 2550
+Wire Wire Line
+	7000 2550 7350 2550
+Wire Wire Line
+	6550 2550 6950 2550
+Wire Wire Line
+	6950 2550 6950 2450
+Wire Wire Line
+	6950 2450 7350 2450
+Wire Wire Line
+	6550 2450 6900 2450
+Wire Wire Line
+	6900 2450 6900 2350
+Wire Wire Line
+	6900 2350 7350 2350
+Wire Wire Line
+	6550 2350 6850 2350
+Wire Wire Line
+	6850 2350 6850 2250
+Wire Wire Line
+	6850 2250 7350 2250
+$Comp
+L power:GND #PWR?
+U 1 1 5C183B77
+P 4050 2450
+AR Path="/5C183BF5/5C183B77" Ref="#PWR?"  Part="1" 
+AR Path="/5C19BBA6/5C183B77" Ref="#PWR?"  Part="1" 
+AR Path="/5C19BBA4/5C1A0478/5C183B77" Ref="#PWR?"  Part="1" 
+AR Path="/5C19BBA4/5C1A04F9/5C183B77" Ref="#PWR?"  Part="1" 
+AR Path="/5BF34C63/5C2B8903/5C183B77" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 4050 2200 50  0001 C CNN
+F 1 "GND" H 4100 2250 50  0000 C CNN
+F 2 "" H 4050 2450 50  0001 C CNN
+F 3 "" H 4050 2450 50  0001 C CNN
+	1    4050 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 2350 4050 2450
+Connection ~ 4050 2350
+Text Label 6750 2050 2    50   ~ 0
+TXD
+Text Label 6750 2150 2    50   ~ 0
+RXD
+Wire Wire Line
+	6550 2150 6750 2150
+Wire Wire Line
+	6550 2050 6750 2050
+Text Label 7150 2150 0    50   ~ 0
+TXD
+Text Label 7150 2050 0    50   ~ 0
+RXD
+Wire Wire Line
+	7350 2050 7150 2050
+Wire Wire Line
+	7350 2150 7150 2150
+Text Label 6750 2850 2    50   ~ 0
+DTR
+Text Label 6750 2950 2    50   ~ 0
+RTS
+Wire Wire Line
+	6550 2850 6750 2850
+Wire Wire Line
+	6550 2950 6750 2950
+Text Label 7150 2650 0    50   ~ 0
+DTR
+Text Label 7150 2750 0    50   ~ 0
+RTS
+Wire Wire Line
+	7350 2650 7150 2650
+Wire Wire Line
+	7350 2750 7150 2750
+Wire Wire Line
+	4250 3050 4500 3050
+Wire Wire Line
+	4250 2850 4500 2850
+$Comp
+L taobao-osc:O_12M,3225 Y?
+U 1 1 5C17EDD2
+P 4500 2950
+AR Path="/5C183BF5/5C17EDD2" Ref="Y?"  Part="1" 
+AR Path="/5C19BBA6/5C17EDD2" Ref="Y?"  Part="1" 
+AR Path="/5C19BBA4/5C1A0478/5C17EDD2" Ref="Y?"  Part="1" 
+AR Path="/5C19BBA4/5C1A04F9/5C17EDD2" Ref="Y?"  Part="1" 
+AR Path="/5BF34C63/5C2B8903/5C17EDD2" Ref="Y?"  Part="1" 
+F 0 "Y?" V 4450 3050 50  0000 L CNN
+F 1 "O_12M,3225" V 4500 3050 50  0000 L CNN
+F 2 "Oscillator:Oscillator_SMD_Abracon_ASE-4Pin_3.2x2.5mm_HandSoldering" H 4500 2950 50  0001 C CNN
+F 3 "~" H 4500 2950 50  0001 C CNN
+	1    4500 2950
+	0    1    1    0   
+$EndComp
+Connection ~ 4500 2850
+Wire Wire Line
+	4500 2850 4950 2850
+Connection ~ 4500 3050
+Wire Wire Line
+	4500 3050 4950 3050
+Wire Wire Line
+	4350 2950 4000 2950
+Wire Wire Line
+	4000 2950 4000 2850
+Connection ~ 4000 2850
+Wire Wire Line
+	4000 2850 3950 2850
+$Comp
+L taobao-components:V_CH340 #PWR?
+U 1 1 5C1830EE
+P 3700 1950
+AR Path="/5C183BF5/5C1830EE" Ref="#PWR?"  Part="1" 
+AR Path="/5C19BBA6/5C1830EE" Ref="#PWR?"  Part="1" 
+AR Path="/5C19BBA4/5C1A0478/5C1830EE" Ref="#PWR?"  Part="1" 
+AR Path="/5C19BBA4/5C1A04F9/5C1830EE" Ref="#PWR?"  Part="1" 
+AR Path="/5BF34C63/5C2B8903/5C1830EE" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 3700 1800 50  0001 C CNN
+F 1 "V_CH340" H 3750 2150 50  0000 C CNN
+F 2 "" H 3700 1950 50  0001 C CNN
+F 3 "" H 3700 1950 50  0001 C CNN
+	1    3700 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L taobao-components:V_CH340 #PWR?
+U 1 1 5C18326B
+P 4050 1950
+AR Path="/5C183BF5/5C18326B" Ref="#PWR?"  Part="1" 
+AR Path="/5C19BBA6/5C18326B" Ref="#PWR?"  Part="1" 
+AR Path="/5C19BBA4/5C1A0478/5C18326B" Ref="#PWR?"  Part="1" 
+AR Path="/5C19BBA4/5C1A04F9/5C18326B" Ref="#PWR?"  Part="1" 
+AR Path="/5BF34C63/5C2B8903/5C18326B" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 4050 1800 50  0001 C CNN
+F 1 "V_CH340" H 4100 2150 50  0000 C CNN
+F 2 "" H 4050 1950 50  0001 C CNN
+F 3 "" H 4050 1950 50  0001 C CNN
+	1    4050 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L taobao-components:V_CH340 #PWR?
+U 1 1 5C18372D
+P 3000 2200
+AR Path="/5C183BF5/5C18372D" Ref="#PWR?"  Part="1" 
+AR Path="/5C19BBA6/5C18372D" Ref="#PWR?"  Part="1" 
+AR Path="/5C19BBA4/5C1A0478/5C18372D" Ref="#PWR?"  Part="1" 
+AR Path="/5C19BBA4/5C1A04F9/5C18372D" Ref="#PWR?"  Part="1" 
+AR Path="/5BF34C63/5C2B8903/5C18372D" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 3000 2050 50  0001 C CNN
+F 1 "V_CH340" H 3050 2400 50  0000 C CNN
+F 2 "" H 3000 2200 50  0001 C CNN
+F 3 "" H 3000 2200 50  0001 C CNN
+	1    3000 2200
+	1    0    0    -1  
+$EndComp
+Text HLabel 8600 2050 2    50   Input ~ 0
+CH340_RXD
+Text HLabel 8600 2150 2    50   Output ~ 0
+CH340_TXD
+Text Label 8400 2150 0    50   ~ 0
+TXD
+Text Label 8400 2050 0    50   ~ 0
+RXD
+Wire Wire Line
+	8600 2050 8400 2050
+Wire Wire Line
+	8600 2150 8400 2150
+$Comp
+L Jumper:SolderJumper_2_Open JP?
+U 1 1 5C1D7C5E
+P 2600 2350
+AR Path="/5C183BF5/5C1D7C5E" Ref="JP?"  Part="1" 
+AR Path="/5BF34C63/5C2B8903/5C1D7C5E" Ref="JP?"  Part="1" 
+F 0 "JP?" H 2600 2555 50  0000 C CNN
+F 1 "SolderJumper_2_Open" H 2600 2464 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 2600 2350 50  0001 C CNN
+F 3 "~" H 2600 2350 50  0001 C CNN
+	1    2600 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2750 2350 3000 2350
+Wire Wire Line
+	3000 2350 3000 2200
+Wire Wire Line
+	2250 2350 2450 2350
+$EndSCHEMATC
